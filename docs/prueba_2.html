@@ -46,7 +46,7 @@
                         <tr>    
                             <td><label for="tipo-doc">Tipo de documento: </label></td>
                             <td>
-                                <select name="tipo-doc" id="tipo-doc"required>
+                                <select name="tipo-doc" id="tipo-doc" required>
                                     <option value="" selected disabled>Seleccione tipo de documento</option>
                                     <option value="ident" id="ident">Documento de identidad</option>
                                     <option value="cedula" id="cedula">Cédula de ciudadanía</option>
@@ -239,26 +239,23 @@
     </body>
 
 </html>
-<table style="width: fit-content; height: fit-content;">  
-  <!-- Ingresa el nombre --> 
- <tr>      
-     <td><label for="nombre" >Nombre: </label></td>
-     <td><input type="text" name="nombre" id="nombre" placeholder="Solo nombre" required> *</td>
- </tr>
- <tr><td><label for="tipo-doc">Tipo de documento: </label></td></tr>
- <tr>    
-  <td><label for="apellido">Apellido: </label></td>
-  <td><input type="text" name="apellido" id="apellido" placeholder="Solo apellido" required> *</td>
+<tr style="width: fit-content; height: fit-content;">
+    <tr>      
+        <td><label for="nombre" >Nombre: </label></td>
+        <td><input type="text" name="nombre" id="Nombre" placeholder="Solo nombre" required> *</td>
+    </tr>
+    <tr><td><label for="tipo-doc">Tipo de documento: </label></td></tr>
+    <tr>    
+        <td><label for="apellido">Apellido: </label></td>
+        <td><input type="text" name="apellido" id="Apellido" placeholder="Solo apellido" required> *</td>
+    </tr>
+    <tr>    
+        <td><label for="addres">Dirección: </label></td>
+        <td><input type="text" name="addres" id="Addres" placeholder="Carrera 1 Calle 2 Sur No 34 - 56" required> *</td>
+    </tr>
+    <tr>
+        <td><label for="barrio">Barrio: </label></td>
+        <td><input type="text" name="barrio" id="Barrio" placeholder="Opcional"></td>
+    </tr>
 </tr>
-<tr>    
-  <td><label for="addres">Dirección: </label></td>
-  <td><input type="text" name="addres" id="addres" placeholder="Carrera 1 Calle 2 Sur No 34 - 56" required> *</td>
-</tr>
-<!-- Ingresa el nombre del barrio -->
-<tr>    
-  <td><label for="barrio">Barrio: </label></td>
-  <td><input type="text" name="barrio" id="barrio" placeholder="Opcional"></td>
-</tr>
-<!-- Ingresa el nombre de la ciudad -->
-<tr> 
 </table>
