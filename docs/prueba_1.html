@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>02 Formulario de inscripción 02</title>
+        <link rel="shortcut icon" href="/imagen/buho01.png" type="image/x-icon">
+        <!-- <time datetime="2024-6-7 00:00">Junio 7 de 2024 a las 00:00</time> -->
+    </head>
+
+    <body style="background-color: grey;">
+        
+        <section id="arriba"></section>
+        
+        <!-- Encabezado de la página "h1" -->
+        <h1>NODO EAFIT</h1>
+        <fieldset style="width: fit-content; height: fit-content;" >
+            <legend>Formulario de inscripción</legend>
+            <br>
+            <fieldset>
+                <legend>Información personal</legend>
+                <!-- Ingresa el nombre -->
+                <label for="nombre">Nombre: </label>
+                <input type="text" name="nombre" id="nombre" placeholder="Solo nombre" required 
+                style="display: inline-block; width: 80px;"> *
+                <br>
+                <!-- Ingresa el apellido -->
+                <label for="apellido">Apellido: </label>
+                <input type="text" name="apellido" id="apellido" placeholder="Solo apellido" required
+                style="display: inline-block; width: 80px;"> *
+                <br>
+                <!-- Selecciona el tipo de documento -->
+                <label for="tipo-doc">Tipo de documento</label>
+                <select name="tipo-doc" id="tipo-doc"required>
+                    <option value="" selected disabled>Seleccione uno tipo de documento</option>
+                    <option value="ident" id="ident">Documento de identidad</option>
+                    <option value="cedula" id="cedula">Cédula de ciudadanía</option>
+                    <option value="extr" id="extr">Céduda de extrangería</option>
+                </select> *
+                <br>
+                <!-- Ingresa el número del documento -->
+                <label for="num-doc">Número de documento</label>
+                <input type="text" name="num-doc" id="num-doc" placeholder="0123456789" required> *
+                <br>
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>Información de contacto</legend>
+                <!-- Ingresa el correo -->
+                <label for="correo">Correo electrónico: </label>
+                <input type="email" name="correo" id="correo" placeholder="ejemplo@email.com" required> *
+                <br>
+                <!-- Ingresa el número de telefono fijo -->
+                <label for="tel-fijo">Teléfono fijo: </label>
+                <input type="tel" name="tel-fijo" id="tel-fijo" placeholder="Opcional">
+                <br>
+                <!-- Ingresa el número de telefono celular -->
+                <label for="tel-cel">Teléfono celular: </label>
+                <input type="tel" name="tel-cel" id="tel-cel" placeholder="+57 111 222 3344" minlength="16" maxlength="16" required> *
+                <br>
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>Información de residencia</legend>
+                <!-- Ingresa la dirección de residencia -->
+                <label for="addres">Dirección: </label>
+                <input type="text" name="addres" id="addres" placeholder="Carrera 1 Calle 2 Sur No 34 - 56" required> *
+                <br>
+                <!-- Ingresa el nombre del barrio -->
+                <label for="barrio">Barrio: </label>
+                <input type="text" name="barrio" id="barrio" placeholder="Opcional">
+                <br>
+                <!-- Ingresa el nombre de la ciudad -->
+                <label for="ciudad">Ciudad: </label>
+                <input type="text" name="ciudad" id="ciudad" placeholder="Ciudad" required> *
+                <br>
+                <!-- Selecciona el departamento -->
+                <label for="departamento">Departamento: </label>
+                <select name="departamento" id="departamento" required>
+                    <option value="" selected disabled>Seleccione un departamento</option>
+                    <option value="Amazonas" id="Amazonas">Amazonas</option>
+                    <option value="Antioquía" id="Antioquía">Antioquía</option>
+                    <option value="Arauca" id="Arauca">Arauca</option>
+                    <option value="Atlántico" id="Atlántico">Atlántico</option>
+                    <option value="Bolívar" id="Bolívar">Bolívar</option>
+                    <option value="Boyacá" id="Boyacá">Boyacá</option>
+                    <option value="Caldas" id="Caldas">Caldas</option>
+                    <option value="Caquetá" id="Caquetá">Caquetá</option>
+                    <option value="Casanare" id="Casanare">Casanare</option>
+                    <option value="Cauca" id="Cauca">Cauca</option>
+                    <option value="Cesar" id="Cesar">Cesar</option>
+                    <option value="Chocó" id="Chocó">Chocó</option>
+                    <option value="Córdoba" id="Córdoba">Córdoba</option>
+                    <option value="Cundinamarca" id="Cundinamarca">Cundinamarca</option>
+                    <option value="Guainía" id="Guainía">Guainía</option>
+                    <option value="Guaviare" id="Guaviare">Guaviare</option>
+                    <option value="La-Guajira" id="La-Guajira">La Guajira</option>
+                    <option value="Magdalena" id="Magdalena">Magdalena</option>
+                    <option value="Meta" id="Meta">Meta</option>
+                    <option value="Nariño" id="Nariño">Nariño</option>
+                    <option value="Norte-de-Santander" id="Norte-de-Santander">Norte de Santander</option>
+                    <option value="Putumayo" id="Putumayo">Putumayo</option>
+                    <option value="Quindío" id="Quindío">Quindío</option>
+                    <option value="Risaralda" id="Risaralda">Risaralda</option>
+                    <option value="San-Andrés-y-Providencia" id="San-Andrés-y-Providencia">San Andrés y Providencia</option>
+                    <option value="Santander" id="Santander">Santander</option>
+                    <option value="Sucre" id="Sucre">Sucre</option>
+                    <option value="Tolima" id="Tolima">Tolima</option>
+                    <option value="Valle-del-Cauca" id="Valle-del-Cauca">Valle del Cauca</option>
+                    <option value="Vaupés" id="Vaupés">Vaupés</option>
+                    <option value="Vichada" id="Vichada">Vichada</option>             
+                </select> *
+                <br>
+                <!-- Selecciona el páis -->
+                <label for="country">País: </label>
+                <select name="country" id="country">
+                    <option value="" selected disabled>Seleccione un país</option>
+                    <option value="Colombia" id="Colombia">Colombia</option>
+                </select> *
+                <br>
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>Información de cursos</legend>
+                <!-- Enlace a la descripción de los cursos  -->
+                <p>Recuerda que puedes ver la información detallada <br> de cada curso en <a href="https://es.nodoeafit.com/cursos-nodo/" target="_blank" rel="noopener noreferrer"><strong>este enlace</strong></a></p>
+                <!-- Selecciona la curso -->
+                <label for="curso">Curso: </label>
+                <select name="curso" id="curso">
+                    <option value="" selected disabled>Seleccione un curso</option>
+                    <option value="A-comunicarte-con-las-inteligencias-artificiales" id="A-comunicarte-con-las-inteligencias-artificiales">A comunicarte con las inteligencias artificiales</option>
+                    <option value="Backend" id="Backend">Backend</option>
+                    <option value="Business-Analyst" id="Business-Analyst">Business Analyst</option>
+                    <option value="Cloud-Native" id="Cloud-Native">Cloud Native</option>
+                    <option value="Design-thinking-for-software-developers" id="Design-thinking-for-software-developers">Design thinking for software developers</option>
+                    <option value="DesignOps" id="DesignOps">DesignOps</option>
+                    <option value="Diálogos-digitales:-GPT-para-principiantes" id="Diálogos-digitales:-GPT-para-principiantes">Diálogos digitales: GPT para principiantes</option>
+                    <option value="Exploración-de-datos" id="Exploración-de-datos">Exploración de datos</option>
+                    <option value="Flutter" id="Flutter">Flutter</option>
+                    <option value="Frontend" id="Frontend">Frontend</option>
+                    <option value="Fundamentals" id="Fundamentals">Fundamentals</option>
+                    <option value="Fundamentals-Data" id="Fundamentals-Data">Fundamentals Data</option>
+                    <option value="Introducción-a-JAVA" id="Introducción-a-JAVA">Introducción a JAVA</option>
+                    <option value="Jobs-to-be-done" id="Jobs-to-be-done">Jobs to be done</option>
+                    <option value="Marketing-Digital" id="Marketing-Digital">Marketing Digital</option>
+                    <option value="Procesamiento-de-datos" id="Procesamiento-de-datos">Procesamiento de datos</option>
+                    <option value="Python" id="Python">Python</option>
+                </select> *
+                <br>
+                <!-- Selecciona la modalidad -->
+                <label for="modalidad">Modalidad: </label>
+                <select name="modalidad" id="modalidad" required>
+                    <option value="" selected disabled>Seleccione una modalidad</option>
+                    <option value="Presencial" id="Presencial">Presencial</option>
+                    <option value="Virtual" id="Virtual">Virtual</option>
+                </select> *
+                <br>
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>Cuéntanos más!</legend>
+                <!-- Agrerga una descripción general de máx 300car -->
+                <label for="description" id="description-label">Agregua una breve descripción sobre ti (máx 300 caracteres) *</label>
+                <br>
+                <textarea name="description" id="description" placeholder="Máximo 300 caracteres" maxlength="300" rows="5" cols="60" style="resize: none;" required></textarea>
+                <br>
+            </fieldset>
+            <br>
+            <fieldset style="text-align: center;">
+                <!-- <Legend></Legend> -->
+                <p>Los campos con asterisco (*) son oblogatorios</p>
+                <!-- Resetea el formulario -->
+                <button type="reset">Reiniciar formulario</button>
+                <!-- Envía el formulario -->
+                <button type="submit">Enviar inscripción</button>
+                <br>
+            </fieldset>
+            <br>
+        </fieldset>
+        <!-- Inicio lateral principal -->
+        <footer>
+            <br>
+            <span>Iconos descargados de www.flaticon.es, de la creadora: <a href="https://www.flaticon.es/autores/yuly-gutierrez" target="_blank">Yuly Gutierrez</a></span><br>
+            <span>Los documentos aquí presentados son totalmente con fines educativos y de aprendisaje</span><br>
+            <br>
+            <span>&copy; Todos los derechos reservados</span><br>
+            <br>
+            <span><a href="#arriba"><strong>  Volver arriba  </strong></a></span><br>
+            <br>
+        </footer>
+        <!-- Fin Footer Principal -->
+    </body>
+</html>
